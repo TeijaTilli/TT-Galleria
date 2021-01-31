@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TT -Galleria</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="index.css">
-    <!--<i class="fab fa-facebook-square"></i>-->
+
+
 
     <!-- Font Awesome (ikonit)-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 
-    <!-- Bootstrap Scripts -->
+    <!-- Bootstrap Scripts (1 -css ja 2 -js) -->
+    <!--1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--2-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -25,10 +34,221 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <!--<i class="fab fa-facebook-square"></i>-->
+
 </head>
 
 <body>
-    <h1>Hello World</h1>
+
+    <section class="part1gallery">
+
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand" href=""><img src="images/TT-Galleria.jpg" alt="pieni_kuva"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+                    <!--ml -auto ei kai vaikuta?-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Galleria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogi.html">Blogi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taiteilija.html">Taiteilijasta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="otayhteyttä.html">Ota yhteyttä</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="startText" onclick="normalizeImg()">
+            <h3 id="tervetuloa">Tervetuloa </h3>
+            <h1 class="bigHeading">TT -Galleriaan!</h1><br>
+            <button id="button1" onclick="myFunction()">Lue enemmän</button>
+            <div id="lueLisää">
+                Mikäli kiinnostuit jostain työstä ja haluat sen itsellesi,
+                <a href="otayhteyttä.html">ota yhteyttä</a>!
+                Mikäli Galleriassa olevan työn kerrotaan olevan yksityisomistuksessa, sillä on jo uusi koti <i
+                    id="heart" class="fas fa-heart"></i>.
+                Voit myös tilata työn oman aiheen mukaan.
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="part2gallery">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img id="sauna" src="images/naistensauna.jpg" alt="sauna">
+                    <p>1. Naisten sauna </p>sekatekniikka, 61*50 
+                </div>
+                <div class="col-sm">
+                    <img src="images/valk_hevonen.JPG" alt="velk.hevonen">
+                    <p>2. Valkoinen hevonen</p> akryyli, 45*35
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/lähilampi.jpg" alt="lähilampi1">
+                    <p>3. Lähilampi 1</p> öljy, noin 50*80, yksityisomistus
+                </div>
+                <div class="col-sm">
+                    <img src="images/metsäpuro.jpg" alt="metsäpuro">
+                    <p>4. Metsäpuro</p> öljy, 60*80, yksityisomistus
+                </div>
+                <div class="col-sm">
+                    <img src="images/lähilampi2.JPG" alt="lähilampi2">
+                    <p>5. Lähilampi 2</p> öljy, noin 30*40, yksityisomistus
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/pouring_maisema2.jpg" alt="pouuring2">
+                    <p>6. Pouringmaisema 1</p> akryyli, 60*80
+                </div>
+                <div class="col-sm">
+                    <img src="images/tausta1.jpg" alt="pouring1">
+                    <p>7. Pouringmaisema 2</p> akryyli, 54*65
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/tanssi.jpg" alt="tanssi">
+                    <p>8. Tanssijat</p> öljy, 27*35
+                </div>
+                <div class="col-sm">
+                    <img src="images/tanssijat.jpg" alt="tanssijat">
+                    <p>9. Tanssijat</p> öljy, noin 40*50, yksityisomistus
+                </div>
+                <div class="col-sm">
+                    <img src="images/syli.JPG" alt="syli">
+                    <p>10. Syli</p> öljy, 36*45
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/julkula1.jpg" alt="julkula1">
+                    <p>11. Julkulan ranta 1</p> öljy, 59*80
+                </div>
+                <div class="col-sm">
+                    <img src="images/julkula2.jpg" alt="julkula2">
+                    <p>12. Julkulan ranta 2</p> öljy, 64*81
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/pentu.jpg" alt="pentu">
+                    <p>13. Pentu</p> öljy, 27*35
+                </div>
+                <div class="col-sm">
+                    <img src="images/Vilma_Hessu.jpg" alt="kissat">
+                    <p>14. Vilma ja Hessu</p> öljy, 38*45
+                </div>
+                <div class="col-sm">
+                    <img src="images/karhujakevat.JPG" alt="karhukevät">
+                    <p>15. Karhu ja kevät</p> öljy, 22*27
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/lintu.jpg" alt="lintu">
+                    <p>16. Kotka</p> öljy, 60*80
+                </div>
+                <div class="col-sm">
+                    <img src="images/kalliomaisema.JPG" alt="kallio">
+                    <p>17. Kalliomaisema</p> öljy, noin 22*30
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/koivut3.jpg" alt="koivut">
+                    <p>18. Kesäkoivut</p> öljy, 50*100
+                </div>
+                <div class="col-sm">
+                    <div class="col-sm">
+                        <img src="images/koivut1.jpg" alt="koivut1">
+                        <p>19. Koivut 1</p> akryyli, 46*55
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/koivut2.jpg" alt="koivut2">
+                        <p>20. Koivut 2</p> akryyli, 46*55
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/seitajärvi.jpg" alt="seitajärvi">
+                    <p>21. Seitajärvi</p> öljy, noin 60*80, yksityisomistus
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/tuulispää.JPG" alt="tuulispää">
+                    <p>22. Tuulispää</p> öljy, noin 30*40
+                </div>
+                <div class="col-sm">
+                    <img src="images/Matissen_tanssi.jpg" alt="matisse">
+                    <p>23. Matissen tanssi</p>öljy, noin 80*100, yksityisomistus
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/arabialainen.JPG" alt="arabialainen">
+                    <p>24. Arabialainen</p> öljy, noin 20*30, yksityisomistus
+                </div>
+                <div class="col-sm">
+                    <img src="images/bet_moai_mies.JPG" alt="moai">
+                    <p>25. Moai-mies</p> betoni
+                </div>
+                <div class="col-sm">
+                    <img src="images/bet_heppa3.JPG" alt="betheppa3">
+                    <p>26. Hevonen</p> betoni
+                </div>
+            </div>
+
+            <!-- Footer -->
+
+            <div id="footer">
+                <!--  https://fontawesome.com/icons/ -->
+                <a class="btn" href="mailto:teijakin@hotmail.com"><i id="envelopewhite" style="font-size: 3em;" class="social-icon fas fa-envelope"></i></a>
+                <p>© Copyright 2021 TT -Galleria</p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
 
 
     <script src="index.js" charset=""></script>
