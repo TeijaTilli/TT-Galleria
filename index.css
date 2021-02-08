@@ -87,7 +87,8 @@ h1, h3{
     font-size: 1.5rem;
 }
 
-/* Footer */
+
+/* Footer Blogi*/
 
 #footer{
     background-color: rgb(46, 44, 44);
@@ -147,6 +148,12 @@ h1, h3{
     display: none;
     font-family: 'Montserrat';
     text-align: left;
+    }
+    .footerBlogi{
+        background-color:  rgb(46, 44, 44);
+        color: white;
+        padding: 3%;
+        line-height: 2.5;
     }
 
     @media (max-width: 1028px ){
@@ -213,4 +220,21 @@ h1, h3{
             }
             }
 
-          
+   /***********    ota yhteyttä    ***********************/      
+   .container-fluid div{
+     padding: 3%;
+     text-align: left;
+   }
+  .yteysOtsikko{
+      color: red;
+      font-weight: 700;
+      font-size: 2.5rem;
+  }
+  @media(max-width:844px){
+    .fa-envelope{
+        font-size:100px;
+    }
+    .fa-paper-plane{
+        display: none;
+    }
+} 

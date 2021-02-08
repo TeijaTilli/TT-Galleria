@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,50 +36,105 @@
         crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
 
-        <!-- Nav Bar -->
+    <!-- Nav Bar -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <a class="navbar-brand" href="index.html"><img src="images/TT-Galleria.jpg" alt="pieni_kuva"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/TT-Galleria.jpg" alt="pieni_kuva"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               
-                <ul class="navbar-nav ml-auto"> <!--ml -auto ei kai vaikuta?-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Galleria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogi.html">Blogi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="taiteilija.html">Taiteilijasta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="otayhteyttä.html">Ota yhteyttä</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        </nav>
-
-        <div class="startTextOthers" onclick="normalizeImg()">
-            <h3>Rohkeasti vaan -</h3>
-            <h1 class="bigHeading">Ota yhteyttä</h1><br>
-            <h3>Tee tilaus / &nbsp;&nbsp;&nbsp; Anna palautetta / &nbsp;&nbsp;&nbsp;Yhteydenotot</h3><!--&nbsp; tämä antaa väliä-->
+            <ul class="navbar-nav ml-auto">
+                <!--ml -auto ei kai vaikuta?-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Galleria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogi.html">Blogi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="taiteilija.html">Taiteilijasta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="otayhteyttä.html">Ota yhteyttä</a>
+                </li>
+            </ul>
         </div>
 
+    </nav>
+
+    <div class="startTextOthers" onclick="normalizeImg()">
+        <h3>Rohkeasti vaan -</h3>
+        <h1 class="bigHeading">Ota yhteyttä</h1><br>
+        <h3>Tee tilaus / &nbsp;&nbsp;&nbsp; Anna palautetta / &nbsp;&nbsp;&nbsp;Yhteydenotot</h3>
+        <!--&nbsp; tämä antaa väliä-->
+    </div>
+
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+                <h3 class="yteysOtsikko">Tilaa työ täyttämällä alla olevat kentät: </h3>
+                <br>
+                <input class="form-control form-control-lg" type="text"
+                    placeholder="Työn koko sentteinä, esim. 80 * 60.">
+                <input class="form-control form-control-lg" type="text"
+                    placeholder="Tekniikka, esim. öljyväri, akryyli, tai betoni.">
+                <input class="form-control form-control-lg" type="text"
+                    placeholder="Muita asiaan liittyviä ajatuksia. ">
+                <input class="form-control form-control-lg" type="text"
+                    placeholder="Yhteystietosi eli puhelinnumero ja sähköposti.">
+                    <br>
+                <h3>Onko valmista? Muistithan yhteystiedot?  Yhteystietosi eivät etene kolmansille osapuolille. Olen sinuun yhteydessä mahdollisimman pian ☺</h3> <br>
+                <button type="submit" class="btn btn-success">LÄHETÄ TILAUS</button>
+            </div>
+            <div class="col-sm-3">
+                <span style="color:black;"><i class="fas fa-paper-plane fa-10x"></i></span>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <span> <a class="btn" href="mailto:teijakin@hotmail.com"><i class="far fa-envelope fa-10x"></i></a></span>
+               
+            </div>
+            <div class="col-sm-9">
+                <h3 class="yteysOtsikko">Lähetä vapaamuotoinen sähköposti: </h3>
+                <p>Klikkaa kirjekuorta ja pääset naputtelemaan minulle vapaamuotoista sähköpostia suoraan
+                    osoitteeseen teijakin@hotmail.com. Jos haluat, että olen yhteydessä sinuun, muista jättää
+                    yhteystietosi. <br> Kiitos yhteydenotosta!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footerBlogi">
+        <a class="btn" href="mailto:teijakin@hotmail.com"><i id="envelopewhite" style="font-size: 3em;"
+                class="social-icon fas fa-envelope"></i></a>
+        <p>© Copyright 2021 TT -Galleria</p>
+    </div>
 
 
 
 
-   
+
+
 </body>
+
 </html>
