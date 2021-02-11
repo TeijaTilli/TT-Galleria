@@ -116,3 +116,13 @@ function resetImg() {
   img.style.transform = "scale(1)";
   img.style.transition = "transform 0.25s ease";
 }
+
+/* Ota yhteyttä, sähköpostin lähetys:  */
+
+function sendEmail() { 
+  document.getElementById("koko").value = "";
+  document.getElementById("tekniikka").value = "";
+  document.getElementById("muuta").value = "";
+  document.getElementById("yhteystiedot").value = "";
+  alert("Kiitos tilauksesta! Tämä ei oikeasti toimi, kun ei ole palvelinta pystyssä formin vastaanottamista varten.");
+}

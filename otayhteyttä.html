@@ -85,17 +85,17 @@
             <div class="col-sm-9">
                 <h3 class="yteysOtsikko">Tilaa työ täyttämällä alla olevat kentät: </h3>
                 <br>
-                <input class="form-control form-control-lg" type="text"
+                <input id="koko" class="form-control form-control-lg koko" type="text"
                     placeholder="Työn koko sentteinä, esim. 80 * 60.">
-                <input class="form-control form-control-lg" type="text"
+                <input id="tekniikka" class="form-control form-control-lg" type="text"
                     placeholder="Tekniikka, esim. öljyväri, akryyli, tai betoni.">
-                <input class="form-control form-control-lg" type="text"
+                <input id="muuta" class="form-control form-control-lg" type="text"
                     placeholder="Muita asiaan liittyviä ajatuksia. ">
-                <input class="form-control form-control-lg" type="text"
+                <input id="yhteystiedot" class="form-control form-control-lg" type="text"
                     placeholder="Yhteystietosi eli puhelinnumero ja sähköposti.">
                     <br>
                 <h3>Onko valmista? Muistithan yhteystiedot?  Yhteystietosi eivät etene kolmansille osapuolille. Olen sinuun yhteydessä mahdollisimman pian ☺</h3> <br>
-                <button type="submit" class="btn btn-success">LÄHETÄ TILAUS</button>
+                <button type="submit" class="btn btn-success" onclick="sendEmail()">LÄHETÄ TILAUS </button>
             </div>
             <div class="col-sm-3">
                 <span style="color:black;"><i class="fas fa-paper-plane fa-10x"></i></span>
@@ -134,7 +134,7 @@
 
 
 
-
+    <script src="index.js" charset=""></script>
 </body>
 
 </html>
