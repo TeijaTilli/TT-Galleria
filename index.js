@@ -1,9 +1,8 @@
-console.log("toimii");
-
+/* Etusivun lue lisää -nappi */
 function myFunction() {
   var x = document.getElementById("lueLisää");
   var buttontext = document.getElementById("button1");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "block";
     buttontext.innerHTML = "Lue vähemmän";
   } else {

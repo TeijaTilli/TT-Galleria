@@ -1,6 +1,5 @@
 body{
     text-align: center;
-
 }
 
 h1{
@@ -34,11 +33,6 @@ h1, h3{
     padding: 0 18px;
 }
 
-.nav-link{
-   /*font-size: 1.2rem;*/ 
-    /*font-family: 'Montserrat';*/ 
-}
-
 .navbar-nav{
     margin-left: auto; /*tämä, jotta linkit asettuvat oikealle*/
     position: relative;
@@ -70,6 +64,7 @@ h1, h3{
     display: none;
     font-family: 'Montserrat';
     font-size: 1.5rem;
+    margin-top: 20px;
 }
 #heart{
     color: red;
@@ -99,6 +94,7 @@ h1, h3{
     height: auto;
     margin-top: 10%;
     padding: 10%;
+    /*image-resolution: 100dpi;   tämä ei toimi, mikä tilalle?*/
 }
 .part2gallery img:hover {
     cursor: pointer;
@@ -138,7 +134,13 @@ h1, h3{
         width: 100%;
         height: 120px;
     }
+    #lueLisää{
+        font-size: 1rem;
+    }
+    .video{
+    width: 100%;
  
+    }
 
     }
     /********************* Blogi **************************/
