@@ -7,7 +7,6 @@ h1{
     font-weight: 900;
 }
 
-
 h1, h3{
     font-family: 'Lato';
 }
@@ -59,7 +58,7 @@ h1, h3{
     }
 }
 
-/*Galleria*/
+/* Galleria */
 #lueLisää{
     display: none;
     font-family: 'Montserrat';
@@ -82,27 +81,17 @@ h1, h3{
   margin-bottom: 10px;
 }
 
-/* Gallerian Kuvat */
-.container {
-    width: 100%;
-    height: 120px;
-}
-
-/* resize images */
-.container img {
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    padding: 10%;
-    image-resolution: 100dpi; /*  tämä ei toimi, mikä tilalle?*/
-}
 .part2gallery img:hover {
     cursor: pointer;
-  
-  /* opacity: 0.7; menee vaalemmaksi*/
 }
 .row p{
     font-size: 1.5rem;
+}
+.part2gallery div div{
+    text-align: center;
+}
+#kesakoivut{
+    margin-bottom: 3%;
 }
 
 
@@ -130,10 +119,6 @@ h1, h3{
         background-color: rgb(46, 44, 44);
         color: white;
     }
-    .container {
-        width: 100%;
-        height: 120px;
-    }
     #lueLisää{
         font-size: 1rem;
     }
@@ -149,6 +134,7 @@ h1, h3{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        padding-bottom: 5%;
        /* min-height: 1000px; poista tarvittaessa...*/
     }
     .blogitekstit div{
@@ -267,3 +253,4 @@ h1, h3{
         display: none;
     }
 } 
+
