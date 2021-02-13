@@ -94,7 +94,7 @@ h1, h3{
     height: auto;
     margin-top: 10%;
     padding: 10%;
-    /*image-resolution: 100dpi;   tämä ei toimi, mikä tilalle?*/
+    image-resolution: 100dpi; /*  tämä ei toimi, mikä tilalle?*/
 }
 .part2gallery img:hover {
     cursor: pointer;
@@ -126,7 +126,7 @@ h1, h3{
     }
     .startText{
         padding: 5% 15%;
-        padding: 25% 5% 5% 5% ;
+        padding: 20% 5% 5% 5% ;
         background-color: rgb(46, 44, 44);
         color: white;
     }
@@ -149,7 +149,7 @@ h1, h3{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        min-height: 1000px;/* poista tarvittaessa...*/
+       /* min-height: 1000px; poista tarvittaessa...*/
     }
     .blogitekstit div{
         background-color: white;
@@ -202,13 +202,14 @@ h1, h3{
         color: black;
     }
     #omakuva{
-        width: 13%;
+        width: 30%; /*ennen 13% */
         border-radius: 50%;
-        margin-top: 3%;
+        margin-left: 50%;
+        
     }
- #copyright{
+    #copyright{
     font-family: 'var(--bs-font-sans-serif)';
- }
+    }
     .part2{
         margin-top: 07%;
     }
@@ -227,19 +228,19 @@ h1, h3{
 
     @media (max-width: 1028px ){
         #omakuva{
-            width: 40%;
+            width: 30%;
             border-radius: 50%;
-            margin-top: 3%;
+            margin-left: 0;
         }
         .startTextOthers{
-            padding: 25% 25% 5% 25%;
+            padding: 20% 25% 5% 25%;
         }
 
         }
 
     @media (max-width: 1300px ){
             #omakuva{
-                width: 20%;
+                width: 40%;
                 border-radius: 50%;
                 margin-top: 3%;
             }
