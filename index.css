@@ -80,7 +80,9 @@ h1, h3{
 #button1{
   margin-bottom: 10px;
 }
-
+.part2gallery img{
+    image-resolution: 72dpi; /***  TÄSSÄ KUVIEN RESOLUUTIO   ****/
+}
 .part2gallery img:hover {
     cursor: pointer;
 }
