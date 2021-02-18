@@ -132,7 +132,7 @@ h1, h3{
     }
     /********************* Blogi **************************/
     .blogitekstit{
-        background-image: url('images/ruusut.jpg') ;
+        background-image: url('images/thumb_ruusut.jpg') ;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
